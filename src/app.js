@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.post('/showpost', (req, res) => {
-
+  console.log('check log')
   const url = `https://secure.shippingapis.com/ShippingAPI.dll?API=ZipCodeLookup&XML=<ZipCodeLookupRequest USERID="661PARAP3185">
               <Address>
               <Address1>${req.body.address1}</Address1>
